@@ -1,0 +1,28 @@
+/************************class slecters*************************/
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: rgb(21 162 21);
+}
+.blue {
+  background-color: blue;
+}
+
+.color-white {
+  color: white;
+}
+
+hr {
+  background-color: black;
+  border: none;
+  height: 2px;
+}
+
+.ghost{
+  background-color:rgb(103, 103, 255);
+}
+
+a {
+  color: #0ca0ff;
+}
