@@ -1,0 +1,130 @@
+/*	background-color: rgba(0, 208, 255, 0.8);*/
+
+.nav div ul li:hover {
+	background-color: darkblue;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	
+}
+
+h1 {
+	color: darkblue;
+}
+
+h3 {
+	color: darkred;
+}
+
+.title {
+	clear:both;
+	margin-top: 50px;
+}
+
+.navbar-inverse {
+    background-color: #10025E !important;
+    border-color: #0A0237 !important;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #0FC3D6 !important;
+}
+
+.navbar-inverse .navbar-nav>li.active>a {
+    color: white !important;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #0487B9 !important;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #0FC3D6 !important;
+}
+
+.navbar {
+    border-radius: 0px !important;
+}
+
+.tab-content {
+    padding: 10px;
+}
+
+.nav-tabs li a {
+    color: #000000 !important;
+}
+
+.nav-tabs li a:hover {
+    color: white !important;
+}
+
+.nav-tabs li.active a:hover {
+    color: black !important;
+}
+
+.nav-tabs>li>a:hover, .nav-tabs>li>a:focus {
+    border-color: #000 #0A022C #0A022C !important;
+    background-color: #0A022C !important;
+}
+
+.nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    border-color: white white white !important;
+    background-color: white !important;
+}
+
+/* STYLES FOR BACKGROUND IMAGE */
+.cover-background {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background: no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/deepSea.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/deepSea.jpg', sizingMethod='scale')";
+}
+
+img {
+    width: 80%;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 70px;
+}
+
+.color-overlay,
+.gradient-overlay {
+  position: absolute;
+  width: 100%;
+  height: 175%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
+.background-blue-dark {
+    background-color: darkblue;
+}
+
+.img-deep-sea {
+    position: absolute;
+    background-image: url("../img/deepSea.jpg");
+    background-size: cover !important;
+    z-index: -1;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.left {
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deep Sea Quizzes</title>
+	<link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+      <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="overlay section cover-background">
+        <div class="gradient-overlay background-blue-dark opacity-80 img-deep-sea"></div>
+    </div>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="home.html">Home</a>
+            </div>
+                
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  <li><a href="sharks.html">Sharks</a></li>
+                  <li><a href="uniquefish.html">Unique Fish</a></li>
+                  <li><a href="octopus.html">Octopi and Squids</a></li>
+                  <li class="active"><a href="quiz.html">Quizzes</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="kaden.html">Kaden</a></li>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+	</header>
+	<div class="title">
+		<div class="container">
+			<h1>Deep Sea Quizzes</h1>
+			<h2>Octopus</h2>
+		</div>
+	</div>
+	<div class="container">
+      <form>
+        <h3>How many tentacles does an octopus have?</h3>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadio" id="q1r1" value="option1" checked>
+                50
+            </label>  
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadio" id="q1r2" value="option1" checked>
+                100
+            </label>  
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadio" id="q1r3" value="option1" checked>
+                35
+            </label>  
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadio" id="q1r4" value="option1" checked>
+                8
+            </label>  
+        </div>
+        <button type="button" 
+                class="btn btn-success"
+                 onclick="checkAnswer('q1r2')">
+          Submit your answer
+        </button>
+      </form>
+      <div id="correct" class="alert alert-success hide">    
+        You are correct! :)
+      </div>
+      <div id="wrong" class="alert alert-danger hide">    
+        Sorry, that is not right. :(
+      </div>
+    </div>
+      <script src="./quiz.js"></script>
+  </body>
+</html>
