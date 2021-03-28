@@ -1,0 +1,65 @@
+body {
+  background-color: lightgray;
+  transition: background-color 3s;
+}
+
+.main-title,
+.loading-title,
+.loading-percentage {
+  font-family: "Star Jedi";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-title {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.lightsaber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightsaber-svg {
+  display: flex;
+}
+
+[src*='lightsaber-handle'] {
+  height: 25px;
+  z-index: 1;
+  position: relative;
+}
+
+.fill {
+  display: flex;
+  flex: 1;
+}
+
+[src*='lightsaber-light'] {
+  height: 18px;
+  position: relative;
+  transition: left 50ms;
+  top: -2px;
+}
+
+.lightsaber-light {
+  top: 2px;
+  left: -30px;
+  position: relative;
+  width: 25%;
+  transition: width 50ms, left 50ms;
+  overflow: hidden;
+}
+
+.loading-percentage-wrapper {
+  font-size: 10px;
+  height: 17px;
+  display: inline-flex;
+  align-items: center;
+}

@@ -1,0 +1,22 @@
+<svg width="426" height="93" viewBox="0 0 426 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="lightsaber-handle">
+<path id="Vector 38" d="M289.5 9.5H6V71.5H337.5V24H289.5V9.5Z" fill="#C4C4C4"/>
+<g id="Vector 39">
+<path d="M281.5 61V41H287V61H281.5Z" fill="#4F4F4F"/>
+<path d="M297.5 61V41H303.5V61H297.5Z" fill="#4F4F4F"/>
+</g>
+<path id="Vector 40" d="M300 47H285V51H300V47Z" fill="#FF0000"/>
+<path id="Vector 41" d="M300 51H285V53H300V51Z" fill="#FFF500"/>
+<g id="Vector 36">
+<path d="M4 12C-3.33786e-06 16 0.666663 33 1.5 41H140V33.5H11.5V25H140V8.49999C96.3333 7.99999 8 7.99999 4 12Z" fill="black"/>
+<path d="M177 8.49999V41H257V8.49999H177Z" fill="black"/>
+<path d="M290 25V0.5H352.5V3.5H426L395 41H337V25H290Z" fill="black"/>
+</g>
+<g id="Vector 37">
+<path d="M4.13118 69.642C0.132423 65.6914 0.798882 48.9012 1.63196 41H140.089V48.4074H11.6289V56.8025H140.089V73.0988C96.4358 73.5926 8.12994 73.5926 4.13118 69.642Z" fill="#303030"/>
+<path d="M177.077 41V73.0988H185V92.5H249V73.0988H257.053V41H177.077Z" fill="#303030"/>
+<path d="M337.028 41V56.8025V73.0988H373L395.01 41H337.028Z" fill="#303030"/>
+</g>
+<circle id="Ellipse 17" cx="217.5" cy="83.5" r="4.5" fill="#C4C4C4" fill-opacity="0.5"/>
+</g>
+</svg>

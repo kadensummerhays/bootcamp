@@ -1,4 +1,10 @@
-.bb8 {        
+.bb8-container {
+  position: relative;
+  top: 0px;
+  padding-left: 10px;
+}
+
+.bb8 {
   transform: scale(0.1);
   width: 0;
   height: 0;
@@ -45,15 +51,11 @@
   width: 35px;
   border-radius: 24px;
   left: 0px;
-  margin-top: 4px;
+  margin-top: 6px;
   margin-bottom: 2px;
 }
 
 .bb8-wrapper {
   width: 45px;
   height: 37px;
-}
-
-body {
-  background-color: lightblue;
 }
