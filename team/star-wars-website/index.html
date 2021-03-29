@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="./bb8/bb8.css">
+    <link rel="stylesheet" href="./star-jedi-font/font-face.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script defer src="./bb8/bb8.js"></script>
+    <script defer src="./light-saber-progress-bar/light-saber-progress-bar.js"></script>
+  </head>
+
+  <body>
+    <h1 class="main-title">Star Wars</h1>
+    <div class="lightsaber" percentage="0">
+      <div class="lightsaber-svg">
+        <img src="./light-saber-progress-bar/lightsaber-handle.svg" />
+        <div class="lightsaber-light">
+          <img src="./light-saber-progress-bar/lightsaber-light.svg" />
+        </div>
+        <div class="fill"></div>
+      </div>
+      <div class="loading-title">loading</div>
+      <div class="loading-percentage-wrapper"><span class="loading-percentage">0</span style="font-weight: 600">%</div>
+    </div>
+    <div class="bb8-container">
+      <div class="bb8-clickable-area">
+        <div class="bb8-switch"></div>
+        <div class="bb8-title">
+          Enable me
+        </div>
+      </div>
+      <div class="bb8-wrapper">
+        <div class="bb8">
+          <img src="./bb8/bb8-head.svg" class="bb8-head" />
+          <img src="./bb8/bb8-body.svg" class="bb8-body" />
+        </div>
+      </div>
+    </div>
+    <br/>
+    <br/>
+  </body>
+</html>

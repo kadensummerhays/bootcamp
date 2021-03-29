@@ -1,0 +1,13 @@
+<svg width="1077" height="63" viewBox="0 0 1077 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="lightsaber-light" filter="url(#filter0_f)">
+<path d="M10 53H1046C1046 53 1066.5 53.5 1066.5 31.5C1066.5 9.5 1046 10 1046 10H10V53Z" fill="white"/>
+<path d="M10 53H1046C1046 53 1066.5 53.5 1066.5 31.5C1066.5 9.5 1046 10 1046 10H10V53Z" stroke="#FF0000" stroke-width="12"/>
+</g>
+<defs>
+<filter id="filter0_f" x="0" y="-0.000946045" width="1076.5" height="63.0019" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
+</filter>
+</defs>
+</svg>
