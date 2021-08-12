@@ -1,0 +1,17 @@
+app-root {
+  .container {
+    padding: 15px;
+  }
+
+  .days-of-week {
+    display: flex;
+
+    .mat-form-field {
+      padding-right: 15px;
+    }
+  }
+
+  h4 {
+    margin-bottom: 0 !important;
+  }
+}

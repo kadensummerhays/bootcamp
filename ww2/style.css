@@ -1,0 +1,35 @@
+body {
+  margin: 0 !important;
+  text-align: center !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://warfarehistorynetwork.com/wp-content/uploads/W-Italy-6-HT-Jul11.jpg');
+  background-size: cover;
+}
+
+.blue {
+  background-color: blue;
+}
+
+#flag {
+  display: none;
+}
+.red {
+  background-color: red;
+  overflow: hidden;
+}
+
+.plane-initial {
+  position: absolute;
+  top: -50px;
+  left: -120px;
+  transition: top 2s, left 2s;
+  width: 100px;
+  transform: rotate(63deg);
+}
+
+.plane-finished {
+  top: 90%;
+  left: calc(100% - 10px);
+}

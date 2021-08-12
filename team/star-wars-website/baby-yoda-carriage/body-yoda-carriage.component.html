@@ -1,0 +1,242 @@
+<template id="baby-yoda-loader">
+  <style>
+    .baby-yoda {
+      position: relative;
+      top: 0;
+      transition: top 1s;
+      transition-timing-function: cubic-bezier(0.2, 0.3, 0.3, 0.2);
+
+      width: 405px;
+      height: 401px;
+      transform: scale(0.5);
+    }
+
+    .baby-yoda.down {
+      top: 25px;
+    }
+
+    .baby-yoda #right-ear {
+      transform-origin: 240px 170px;
+      transition: transform 1s;
+      transition-timing-function: cubic-bezier(0.2, 0.3, 0.3, 0.2);
+    }
+
+    .baby-yoda.down #right-ear {
+      transform: rotate(-10deg);
+    }
+
+    .baby-yoda:not(.down) #right-ear {
+      transform: rotate(0deg);
+    }
+
+    .baby-yoda #left-ear {
+      transform-origin: 170px 170px;
+      transition: transform 1s;
+      transition-timing-function: cubic-bezier(0.2, 0.3, 0.3, 0.2);
+    }
+
+    .baby-yoda.down #left-ear {
+      transform: rotate(10deg);
+    }
+
+    .baby-yoda:not(.down) #left-ear {
+      transform: rotate(0deg);
+    }
+  </style>
+  <div class="baby-yoda">
+    <svg width="405" height="401" viewBox="0 0 405 401" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="body-yoda-carriage">
+        <g id="Carriage">
+          <path id="Carriage_2"
+            d="M384 214C394.5 315 308.83 399 205 399C101.17 399 21.9034 319.548 20 229C16.5 62.5 87 0 205 0C318 0 389 61.5 384 214Z"
+            fill="#ADCD89" />
+          <g id="Right Rotator">
+            <path id="Vector 43"
+              d="M401.5 249L393 251L393 205L401.5 208C402.331 210.054 403.564 215.143 403.963 225C404.362 234.857 402.663 243.935 401.5 249Z"
+              fill="#ADCD89" />
+            <path id="Vector 42"
+              d="M395 258L384 258L384 202L395 202C395.833 204.5 397.6 212.5 398 224.5C398.4 236.5 396.167 251.833 395 258Z"
+              fill="#ADCD89" stroke="black" stroke-opacity="0.25" />
+          </g>
+          <g id="Left Rotator">
+            <path id="Vector 43_2"
+              d="M3.5 211L12 209V255L3.5 252C2.66948 249.946 1.43572 244.857 1.03707 235C0.638417 225.143 2.33727 216.065 3.5 211Z"
+              fill="#ADCD89" />
+            <path id="Vector 42_2"
+              d="M10 202H21V258H10C9.16667 255.5 7.4 247.5 7 235.5C6.6 223.5 8.83334 208.167 10 202Z" fill="#ADCD89"
+              stroke="black" stroke-opacity="0.25" />
+          </g>
+          <g id="Rotating Arm">
+            <rect id="Rotating Arm_2" x="21.5" y="216.5" width="362" height="31" fill="#ADCD89" stroke="#747474" />
+            <path id="Vector 47" opacity="0.75"
+              d="M82 235.5C80.3115 237.04 79 239 80 241C81 243 103.5 243.5 104.5 241C105.5 238.5 99.5 235.5 99.5 235.5C99.5 235.5 97.5635 232.224 95.5 232C93.1304 231.743 92.7331 234.667 90.5 235.5C87.3899 236.66 84.4524 233.263 82 235.5Z"
+              fill="#839A68" />
+            <path id="Vector 48" opacity="0.75"
+              d="M322.5 228.5C323.226 226.884 322.705 222.942 322 221C321.295 219.058 307.28 219.462 307 222C306.72 224.538 305.55 227.514 307 230.5C308.086 232.736 310.414 234.878 311.5 235C312.747 235.14 316.926 232.939 318 232C319.496 230.693 321.445 230.847 322.5 228.5Z"
+              fill="#839A68" />
+          </g>
+          <g id="Bottom Carriage">
+            <path id="Bottom Carriage_2"
+              d="M193 398C78.5553 398 31.3333 299.333 21 247.5H384.5C376 303 335.5 398 193 398Z" fill="#ADCD89" />
+            <path id="Vector 44" opacity="0.75"
+              d="M86.5 288C86.6367 283.549 90 278.5 89.5 277C89 275.5 79 277 79 277L73 281.5C73 281.5 70 286.5 70.5 291C71 295.5 77 300 79 300.5C81 301 89 301.5 89.5 300.5C90 299.5 86.3459 293.018 86.5 288Z"
+              fill="#839A68" />
+            <path id="Vector 45" opacity="0.75"
+              d="M235.5 269C229.495 261.302 210.5 269 210.5 269C210.5 269 206.5 268 207.5 261C208.473 254.192 244.913 260.626 246.914 260.985C246.992 260.842 247.619 260.241 250.5 258C255 254.5 276.5 258 276.5 258V264.5C276.5 264.5 264.531 260.888 258.5 264.5C256.246 265.85 253.5 269 253.5 269L250.5 273C250.5 273 254.5 295 253.5 297C252.5 299 238 293 235.5 288.5C233 284 240.184 275.005 235.5 269Z"
+              fill="#839A68" />
+            <g id="Vector 46" opacity="0.75">
+              <path d="M270 354.5L273 345H279.5L287.5 348.5L279.5 354.5H270Z" fill="#839A68" />
+              <path
+                d="M186.5 373.5C93.5 376 42.1667 303.833 24 262C24 262 49.5 402.5 199.5 400.5C337.5 397 372.5 293 372.5 293C319.5 360.5 279.5 371 186.5 373.5Z"
+                fill="#839A68" />
+            </g>
+          </g>
+          <g id="Top Carriage">
+            <path id="Vector 49"
+              d="M83.5 46C31.5 96 23.1667 181.167 25.5 217.5H379C378.167 198.167 375.5 154 371.5 132C367.5 110 338.833 65.5 325 46H314C309.167 42.5 296.9 34.2 286.5 29C276.1 23.8 253.167 20.5 243 19.5V10.5C233.667 9 212.4 6 202 6C191.6 6 167.333 9 156.5 10.5V19.5C148.833 21.1667 131.2 25.4 122 29C112.8 32.6 100.833 41.8333 96 46H83.5Z"
+              fill="#696E5E" />
+            <path id="Vector 50" d="M198.5 47C68.5 47 43.3333 160.667 47 217.5H353C355.667 160.667 328.5 47 198.5 47Z"
+              fill="#B67800" />
+          </g>
+        </g>
+        <g id="baby-yoda">
+          <g id="body">
+            <path id="main-body"
+              d="M286 198C276.681 191.482 269.133 192.319 258 190C226.841 183.509 206.5 183 176.5 190C146.5 197 154.5 198 154.5 198L132 209L123 218H297C297 218 296 209.5 295.5 208C295 206.5 290.978 201.482 286 198Z"
+              fill="#8CA987" />
+            <g id="right-hand" filter="url(#filter0_d)">
+              <path
+                d="M248 223V218C248 218 258.5 207.5 261.5 206C264.5 204.5 275.5 204 275.5 204C275.5 204 290 203 291.5 204C293 205 295.003 207.191 296 210C296.989 212.785 296.5 218 296.5 218H288L273.5 227L267 228L266 224.5L257 227L255.5 222L248 223Z"
+                fill="#A5C99F" />
+            </g>
+            <g id="left-hand" filter="url(#filter1_d)">
+              <path
+                d="M167.5 220.5C153 212.5 140.1 207 134.5 207C129.648 207 119.94 210.263 114.316 218.5H120.5L141 233L148.5 235V227.5H158V220.5H167.5Z"
+                fill="#A5C99F" />
+            </g>
+          </g>
+          <g id="head">
+            <g id="left-ear">
+              <path id="Vector 58"
+                d="M136 131H167V191.5C156 190.833 103.8 190 77 188C50.2 186 19.8333 146.167 8 126.5L136 131Z"
+                fill="#A5C99F" />
+              <g id="Vector 60" filter="url(#filter2_i)">
+                <path
+                  d="M111.5 180.5H140V165.5C140 165.5 121 151.5 106.5 146C92 140.5 27 140 27 140C27 140 62.5 171 79.5 177C96.5 183 106.5 180.5 111.5 180.5Z"
+                  fill="#D69F8D" />
+              </g>
+            </g>
+            <g id="right-ear">
+              <path id="Vector 59"
+                d="M262.86 128.016L228 133.5L225 194.5C235.942 193.188 298.474 185.02 325.11 181.448C351.746 177.875 379.718 136.325 390.374 115.997L262.86 128.016Z"
+                fill="#A5C99F" />
+              <g id="Vector 61" filter="url(#filter3_i)">
+                <path
+                  d="M291.766 173.258L263.312 174.886L262.456 159.91C262.456 159.91 280.626 144.848 294.788 138.529C308.95 132.21 373.816 128 373.816 128C373.816 128 340.143 160.976 323.514 167.937C306.884 174.898 296.758 172.973 291.766 173.258Z"
+                  fill="#D69F8D" />
+              </g>
+            </g>
+            <path id="main-head"
+              d="M222.5 209.5C249.217 204.575 264.425 203.378 267.5 167.5C269.511 144.037 263.035 129.352 251.5 121C237.225 110.664 225 109.5 203 107C188.792 107 162.025 108.544 147 125C138.76 134.024 136.708 148.233 136 167.5C134.951 196.03 152.166 205.171 179 209.5C184.064 210.317 186.5 214 200.5 214C217.5 214 216.931 210.527 222.5 209.5Z"
+              fill="#A5C99F" />
+            <g id="left-eye">
+              <g id="Ellipse 18">
+                <ellipse cx="165.5" cy="173.5" rx="21.5" ry="19.5" fill="black" />
+                <ellipse cx="165.5" cy="173.5" rx="21.5" ry="19.5" fill="black" />
+              </g>
+              <g id="Ellipse 20" filter="url(#filter4_d)">
+                <ellipse cx="157.5" cy="172" rx="4.5" ry="4" fill="white" />
+              </g>
+            </g>
+            <g id="right-eye">
+              <g id="Ellipse 19">
+                <ellipse cx="239.5" cy="173.5" rx="21.5" ry="19.5" fill="black" />
+                <ellipse cx="239.5" cy="173.5" rx="21.5" ry="19.5" fill="black" />
+              </g>
+              <g id="Ellipse 21" filter="url(#filter5_d)">
+                <ellipse cx="229.5" cy="169" rx="4.5" ry="4" fill="white" />
+              </g>
+            </g>
+            <path id="nose"
+              d="M203.5 188C200 188 197.5 186 197.5 184.5C197.5 183 199 182 199 182H207.5C207.5 182 209 183.5 209 184.5C209 185.5 207 188 203.5 188Z"
+              fill="#0A0A0A" />
+            <path id="mouth"
+              d="M203.025 200.5C200.625 200.5 193.525 201 194.025 197C195.025 194.5 196.025 194.5 203.025 194.5H203.025C210.542 194.5 211.525 194.5 212.025 197C211.525 201 205.425 200.5 203.025 200.5Z"
+              fill="#0A0A0A" />
+            <path id="head-scar"
+              d="M215.5 136L214 152.5L216.5 152L219.5 148L249.5 147L244 142.5L224.5 141.5L221.5 139.5L223 127.5L227 124.5L228.5 120.5L225.5 119L220 122L215.5 136Z"
+              fill="#839A68" fill-opacity="0.25" />
+          </g>
+        </g>
+      </g>
+      <defs>
+        <filter id="filter0_d" x="238" y="195.556" width="60.6208" height="36.4444" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+          <feOffset dx="-4" dy="-2" />
+          <feGaussianBlur stdDeviation="3" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <filter id="filter1_d" x="112.316" y="202" width="59.1845" height="34" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+          <feOffset dx="1" dy="-2" />
+          <feGaussianBlur stdDeviation="1.5" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.19 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <filter id="filter2_i" x="27" y="140" width="113" height="41.0165" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha" />
+          <feOffset />
+          <feGaussianBlur stdDeviation="4.5" />
+          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+          <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+        </filter>
+        <filter id="filter3_i" x="261" y="128" width="115.157" height="47.4012" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha" />
+          <feOffset />
+          <feGaussianBlur stdDeviation="4.5" />
+          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+          <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+        </filter>
+        <filter id="filter4_d" x="147" y="163" width="21" height="20" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+          <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow" />
+          <feOffset dy="1" />
+          <feGaussianBlur stdDeviation="2" />
+          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <filter id="filter5_d" x="219" y="160" width="21" height="20" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+          <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow" />
+          <feOffset dy="1" />
+          <feGaussianBlur stdDeviation="2" />
+          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+</template>
